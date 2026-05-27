@@ -5,6 +5,9 @@ from course_data import MODULES, COURSE_INFO, SYSTEM_PROMPT
 
 # ── Config ──────────────────────────────────────────────────────────
 #GROQ_API_KEY = ""
+# Fetch secrets from the Streamlit Cloud settings
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+
 GROQ_BASE = "https://api.groq.com/openai/v1"
 MODEL = "llama-3.1-8b-instant"
 
